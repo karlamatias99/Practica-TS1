@@ -14,16 +14,6 @@ class ModeloControlador
 
     }
 
-    static function Semillas(){
-      //conexion
-    // $semilla = new Modelo();
-      //extraer datos
-   //  $datos = $semilla->Mostrar("semilla","1");
-      include("Vista/MaizAmarillo.php");
-
-  }
-
-
 
 
 }
