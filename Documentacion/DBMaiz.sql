@@ -9,25 +9,24 @@ CREATE TABLE IF NOT EXISTS USUARIO (
 );
 
 CREATE TABLE IF NOT EXISTS SEMILLA (
-	id INT NOT NULL AUTO_INCREMENT,
+	id VARCHAR(50) NOT NULL,
 	variante VARCHAR(50) NOT NULL,
 	descripcion LONGTEXT NOT NULL,
 	altura_Planta DECIMAL(10,2) NOT NULL,
 	altura_Mazorca DECIMAL(10,2) NOT NULL,
 	cant_por_Manzana INT NOT NULL,
 	rendimiento INT NOT NULL,
-	imagen VARCHAR(1000),
 	PRIMARY KEY(id) 
 );
 
 CREATE TABLE IF NOT EXISTS LUGAR(
 	nombre VARCHAR(50) NOT NULL,
 	variante_Maiz VARCHAR(50) NOT NULL,
-	PRIMARY KEY(nombre) 
+	PRIMARY KEY(nombre)
 );
 
 
-INSERT INTO SEMILLA (variante,descripcion,altura_Planta,altura_Mazorca,cant_por_Manzana,rendimiento) VALUES ('ICTA HB-83','Maiz Amarillo','Se caracteriza por sus mazorcas alargadas con grano de  textura semicristalina, coloraciones amarilla y blanca y muy tolerante al volcamiento.',2.40,1.20,30,80);
+INSERT INTO SEMILLA (id,variante,descripcion,altura_Planta,altura_Mazorca,cant_por_Manzana,rendimiento) VALUES ('ICTA HB-83','Maiz Amarillo','Se caracteriza por sus mazorcas alargadas con grano de  textura semicristalina, coloraciones amarilla y blanca y muy tolerante al volcamiento.',2.40,1.20,30,80);
 
 INSERT INTO SEMILLA (id,variante,descripcion,altura_Planta,altura_Mazorca,cant_por_Manzana,rendimiento) VALUES ('Maiz negro','Maiz Negro','El maíz negro es una variedad del maíz, este posee la coronta y los granos de un color morado característico, debido al pigmento que contiene denominado Antocianina.',0.6,0.4,30,50);
 
